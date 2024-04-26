@@ -1,0 +1,777 @@
+
+/*Reglas predeterminadas para todos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+
+/*Fondo*/
+body {
+    background: rgb(0, 0, 0);
+    
+
+}
+
+/*Container del menu*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*Container del container del menu*/
+.back {
+    padding: 32px 0;
+    background-color: black;
+}
+
+/*Container del menu*/
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/*logo*/
+.logo {
+
+    display: flex;
+    
+    height: 45px;
+
+}
+
+.logo:hover{
+    transform: scale(1.2);
+    color: crimson;
+    cursor: pointer;
+}
+
+/*menu*/
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+/*links del menu*/
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+/*Cuando pasa el raton por encima*/
+.menu .navbar ul li a:hover{
+    /*transform: scale(1.2);*/
+    color:crimson;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/*adaptado a pantallas*/
+@media only screen and (max-width:754px){
+
+    .menu .navbar ul li a {
+        text-align: center;
+    }
+
+    .menu {
+        padding: 30px;
+
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .back {
+        padding: 47px 0;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    /*si menu esta checked muestra navbar*/
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .container2 > div{
+        
+        
+    }
+
+    .metodopago {
+        transform: scale(0.5);
+    }
+
+    .carrob {
+
+        height: 100%;
+        
+    }
+
+    .carrobuton {
+        transform: scale(1.1);
+        position: relative;
+
+        
+        
+    }
+
+    .bod{
+        transform: scale(0.8);
+        margin-right: 110px;
+    }
+
+    .text {
+        transform: scale(0.8);
+    }
+
+    /*CON ESte MODIFICAMOS EL FOOTER*/
+
+    .footer {
+        /*position: absolute;*/
+        width: 100px;
+        display: none;
+    }
+
+    .footer  {
+        display: initial;
+    }
+
+    .container2 {
+        
+        display: none;
+
+    }
+
+    .container2 {
+        display: block;
+        background: rgb(0, 0, 0);
+    }
+    
+    .tprof {
+        font-size: 13pt;
+        
+        text-align: center;
+        align-items: center;
+
+
+
+
+    }
+
+    .imgp img {
+    width: 75%;
+    height: 300px;
+    
+
+    }
+
+    .map{
+        display: flex;
+        width: 100%;
+    }
+
+
+    
+}
+
+
+/*############################################################################################*/
+
+/*ADECUA A PANTALLA PC*/
+
+@media only screen and (min-width:755px){
+    .imgp {
+        display: flex;
+    }
+
+    .tprof {
+        font-size: 20pt;
+    }
+
+    
+    .imgp img {
+        width: 400px;
+        height: 400px;
+    
+    }
+
+    .map  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .tprof {
+        text-align: center;
+    }
+
+}
+
+
+/*AQUI ESTA EL MEDIA*/
+
+
+.bod{
+    background: black;
+    height: auto;
+    display:flex;
+    width: auto;
+    position: relative;
+
+    align-items: center;
+    text-align: center;
+    justify-content: right;
+    margin-right: 20px;
+
+}
+
+.footer{
+    color: white;
+    /*border: 2px solid white;*/
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    /*display: grid;
+    /*Para que siempre este abajo*/
+    /*bottom: 0;
+    /*position: absolute;*/ /*Esto en el footer hacia que no se colo cara bien*/
+
+   /* width: auto;
+    /*height: auto;
+    /*text-align: center;
+  /*  align-items: center;
+/*    justify-content: center;*/
+
+
+    /*
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas: "logo texto metodos-pago instagram facebook";
+*/
+
+
+
+    
+
+
+
+
+
+.container2 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    
+    
+    display: block; /*con este se pueden poner ordenados restos uno al lado del otro*/
+    position: relative;
+    margin: 5px;
+    /*
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+    
+    
+    grid-template-areas: "logo texto metodos-pago instagram facebook";*/
+
+}
+
+/*LOGO*/
+div.logo.final{
+    margin: 100px;
+}
+
+
+
+/*########################################Direciones y mas###########################################################################*/
+
+.text {
+    
+    /*display: inline-block;*/
+    text-align: center;
+    
+}
+
+
+
+.text div:hover {
+    transform: scale(1.1);
+    color: crimson;
+}
+
+.line1 {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+/*########################################Buscadpr###########################################################################*/
+.buscador {
+    position: relative;
+    text-align:center;
+    /*margin-top: 20px;*/
+    align-items: right;
+    width: auto;
+   
+    
+}
+
+/*Boton del Buscador*/
+.bbuscar{
+    background: rgb(121, 88, 166);
+    color: red;
+    width: auto;
+    border-radius:0 5px 5px 0;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 10px 5px;
+    
+    color: white;
+    
+}
+
+.bbuscar:hover {
+    cursor: pointer;
+    background: crimson;
+}
+
+/*svg de la lupa*/
+.lupasvg {
+    position: relative;
+    pointer-events: none; /*gracias a esto el  boton se hace entero clickable*/
+    filter: invert();
+}
+
+
+/*Entry del buscador*/
+.input {
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/*########################################Metodo de pago###########################################################################*/
+
+.metodopago {
+    
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.metodopago:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*########################################Categorias###########################################################################*/
+
+.pago {
+    align-items: center;
+    width: auto;
+    grid: metodos-pago;
+}
+
+.cuerpo {
+    border: 1px solid white;
+    border-radius: 20px;
+    
+    color: white;
+    display: flex; /*flexbox y justify content center */
+    
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    float: left;
+    justify-content: center;
+    
+
+}
+
+.resinit {
+    
+    /*text-align: center;*/
+    width: auto;
+    height: auto;
+    /*overflow:auto;*/
+    align-items: center;
+    text-align: center;
+}
+
+/*########################################CARRO DE COMPRA###########################################################################*/
+
+.carrosvg {
+    color: white;
+    pointer-events: none;
+    filter: invert();
+    top: 0;
+    justify-content: center;
+
+}
+
+
+.carrosvg:hover {
+    fill:#ff0000;
+    
+    top: 0;
+    justify-content: center;
+
+}
+
+
+.carrob {
+    
+    align-items: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    
+   
+    
+}
+
+
+
+.carrobuton {
+    
+    
+    width: auto;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.carrobuton:hover {
+    cursor: pointer;
+    
+    fill: red;
+    
+}
+
+
+/*#####################################TEXTO DIRECCIONES ETC##############################################################################*/
+.cuerpo .resinit div ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    /*display: block;*/
+    
+
+
+}
+
+.cuerpo .resinit div ul li a:hover {
+    transform: scale(1.1);
+    color: crimson;
+    cursor: pointer;
+    
+}
+
+
+.cuerpo .resinit div ul li:hover {
+    transform: scale(1.1);
+    color: crimson;
+    border: 1px solid crimson;
+    cursor: pointer;
+
+}
+
+.cuerpo .resinit div ul li {
+    position: relative;
+    float: left;
+    align-items: center;
+    margin: 7px;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+    
+}
+/*########################################Logo###########################################################################*/
+.logofinal {
+    filter: invert();
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.final {
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*########################################Instagram###########################################################################*/
+.instalogo {
+    width: 50px;
+}
+
+.instalogo:hover {
+    color: crimson;
+}
+
+.instagramuser {
+    width: 50px;
+}
+
+.linkinsta {
+    width: 10px;
+    height: 10px;
+}
+
+.instagram {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+.coninsta {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+    width: 45px;
+    height: 45px;
+}
+/*########################################Facebook###########################################################################*/
+
+.facebook {
+    width: 50px;
+    height: 50px;
+    float: right;
+    
+    
+    margin: auto;
+
+ 
+}
+
+.redes {
+    width: 100%;
+    display: inline-block;
+    height: 100px;
+    align-items:center;
+    justify-content: center;
+    
+    
+    flex-direction: row;
+    position: relative;
+}
+
+.fspan {
+    width: 200px;
+    height: 200px;
+}
+
+.fspan a {
+    width: 200px;
+    height: 200px;
+}
+
+.logosvgf {
+    width: 50px;
+    height: 50px;
+    filter: invert();
+    pointer-events: none;
+}
+
+.logosvgf:hover {
+    cursor: pointer;
+}
+.footer .container2 .redes .facebook a {
+    width: 50px;
+    display: inline-block; /*esto nos permite redimensionar hasta el contenedor padre*/
+    
+}
+
+/*##################################################################################*/
+
+/*COnttenedor de la descripcion del inicio*/
+.des-empresa {
+    /*border: 1px solid white;*/
+    border-radius: 5px;
+    color: white;
+    margin: 15px;
+    margin-top: 25px;
+}
+
+/*Contenedor de los elementosde la descrp*/
+.profesion {
+    margin: 5px;
+}
+
+/*Titulo de la pagina*/
+.tprof {
+    display: flex;
+    background-image:url(Tienda.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    align-items: center; /*Esto lo centra en y*/
+    justify-content: center; /*Esto lo centra en x*/
+    color: white;
+    position: relative;
+    margin-top: 20px;
+}
+
+.tprof:hover {
+    transform: scale(1.1);
+    color:crimson;
+}
+
+
+/*subcontenedor de la descrp */
+.des-prof {
+    text-align: center;
+}
+
+/*Primer texto de la descrp*/
+.presentacion {
+    font-size: 16pt;
+    margin: 5px;
+    margin-top: 20px;
+    text-align: center;
+    
+    
+}
+
+/*Conjunto de textos 2.1*/
+.texto2_1{
+    font-size: 16pt;
+    margin: 5px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+/*Imagen oscar*/
+.imgp {
+    
+
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgp img {
+    margin: 5px;
+
+}
+
+.oscar2 {
+    
+}
+
+.map {
+    align-items: center;
+    
+}
+
+.gmaps {
+    width: 100%;
+}
+
+
+/*##################################################################################################################################################################################################################*/
+/*Contacto*/
+/*##################################################################################################################################################################################################################*/
+
+.telef:hover {
+    color: crimson;
+    transform: scale(1.1);
+}
+
+
+.email:hover {
+    color: crimson;
+    transform: scale(1.1);
+}
+
+
+.dir:hover {
+    color: crimson;
+    transform: scale(1.1);
+}
+
+.telef, .email, .dir {
+    margin: 30px;
+}
